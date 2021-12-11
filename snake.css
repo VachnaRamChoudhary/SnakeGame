@@ -1,0 +1,96 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background:brown;
+}
+.scoreBoard{
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
+}
+/* h1,h2{
+  text-align: center;
+} */
+
+.body{
+  height: 80vh;
+  width: 100%;
+  background:brown;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: center;
+}
+.hs{
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+.kb{
+  display: inline-block;
+  /* justify-content: space-around; */
+}
+#board{
+  width: 85vmin;
+  height: 85vmin;
+  background-image: linear-gradient(rgb(170,236,170),rgb(236,236,167));
+border: 2px solid black;
+display: grid;
+grid-template-rows: repeat(25,1fr);
+grid-template-columns: repeat(25,1fr);
+}
+.head{
+  background-color: blue;
+  border-radius: 0px 8px 0px 8px;
+  /* border-radius: 4px; */
+  border: 2px solid black;
+}
+.food{
+  background-color: green;
+  border-radius: 10px;
+}
+.snake{
+  background-color: purple;
+  border-radius: 13px;
+  border: 1px solid black;
+}
+.keyBoard{
+  height:auto;
+  width: auto;
+  /* border: 2px solid blue; */
+  display: inline-block;
+  min-width: 100px;
+
+}
+.d1,.d3{
+  position: relative;
+  width: 80px;
+  /* border: 2px solid blue; */
+  margin:4px auto;
+}
+.btn{
+  min-width: 80px;
+}
+.footer{
+  height:auto;
+  width: auto;
+  /* border: 2px solid blue; */
+  align-items: baseline;
+  display: flex;
+  justify-content:space-around;
+  /* margin-bottom: 10px; */
+  margin-top: 5px;
+
+}
+#musicbtn{
+  height:28px;
+  padding: 0px;
+  margin: 0px,2px;
+
+}
+.info,#maxscore{
+  font-weight: bold;
+  color: white;
+}
