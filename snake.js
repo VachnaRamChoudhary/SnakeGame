@@ -79,6 +79,7 @@ function isCollide(sarr) {
 function gameEngine() {
     if (isCollide(snakeArr)) {
         musicSound.pause();
+        msp.innerHTML = "Play Music"
         gameOverSound.play();
         inputDir = {
             x: 0,
