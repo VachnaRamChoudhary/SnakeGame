@@ -80,6 +80,7 @@ function gameEngine() {
     if (isCollide(snakeArr)) {
         musicSound.pause();
         msp.innerHTML = "Play Music"
+        btnStart[0].innerHTML="Start"
         gameOverSound.play();
         inputDir = {
             x: 0,
